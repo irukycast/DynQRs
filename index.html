@@ -5,46 +5,75 @@
   <title></title>
   <style>
       body {
-        background-color: lightblue;
+        background-color: #FFC300 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
         text-align: center;
       }
       
       .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        animation: breathe 2s ease-in-out infinite;
+      }
+      
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #fff transparent transparent transparent;
+      }
+      
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes breathe {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      .loader-logo {
+        width: 80px; /* Tamaño del logo */
+        height: 80px; /* Tamaño del logo */
+        background-image: url(path/to/your/logo.png); /* Ruta de tu logo */
+        background-size: cover;
+        border-radius: 50%;
+      }
   </style>
 </head>
 <body>
