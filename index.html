@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <style>
+    <style>
       body {
         background-color: #DC8807 ;
         display: flex;
@@ -11,48 +11,6 @@
         align-items: center;
         height: 100vh;
         text-align: center;
-      }
-      
-      .lds-ring {
-        display: inline-block;
-        position: relative;
-        width: 80px;
-        height: 80px;
-        animation: breathe 2s ease-in-out infinite;
-      }
-      
-      .lds-ring div {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        width: 64px;
-        height: 64px;
-        margin: 8px;
-        border: 8px solid #fff;
-        border-radius: 50%;
-        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        border-color: #fff transparent transparent transparent;
-      }
-      
-      .lds-ring div:nth-child(1) {
-        animation-delay: -0.45s;
-      }
-      
-      .lds-ring div:nth-child(2) {
-        animation-delay: -0.3s;
-      }
-      
-      .lds-ring div:nth-child(3) {
-        animation-delay: -0.15s;
-      }
-      
-      @keyframes lds-ring {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
       }
       
       @keyframes breathe {
@@ -73,6 +31,7 @@
         background-image: url(DynQRs/fotor_2023-6-6_20_25_0.png); /* Ruta de tu logo */
         background-size: cover;
         border-radius: 50%;
+        animation: breathe 2s ease-in-out infinite;
       }
   </style>
 </head>
